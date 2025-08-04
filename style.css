@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ffdee9, #b5fffc);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  animation: fadeIn 2s ease-in;
+  position: relative;
+}
+
+/* Sparkles Floating Animation */
+body::before {
+  content: "✨💖✨";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  font-size: 2em;
+  animation: floatSparkles 6s infinite linear;
+  transform: translateX(-50%);
+  opacity: 0.5;
+}
+
+@keyframes floatSparkles {
+  0% { top: -10px; opacity: 0.5; }
+  50% { top: 50%; opacity: 1; }
+  100% { top: 120%; opacity: 0; }
+}
+
+.container {
+  max-width: 750px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  animation: popUp 1.2s ease-out;
+}
+
+    .quotes p {
+  font-size: 1.1em;
+  margin: 15px 0;
+  color: #6a1b9a;
+  font-style: italic;
+}
+
+@keyframes popUp {
+  0% { transform
+
+    /* Fade-in effect for quotes */
+.fade-in {
+  animation: fadeIn 3s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Heartbeat animation for heading */
+.pulse {
+  animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Glow effect on button hover */
+.glow {
+  background-color: #ff69b4;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3
